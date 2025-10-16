@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .why-choose-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 60px;
     align-items: center;
 }
@@ -426,8 +426,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 24px;
 }
 
@@ -481,7 +481,7 @@ h1, h2, h3, h4, h5, h6 {
 /* How It Works Section */
 .how-it-works {
     padding: 100px 0;
-    background-color: var(--white);
+    background-color: var(--gray-light);
 }
 
 .section-title {
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
 .how-it-works-content {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    justify-content: center;
     align-items: center;
     margin-top: 60px;
 }
@@ -502,6 +502,7 @@ h1, h2, h3, h4, h5, h6 {
 .how-text {
     max-width: 600px;
     text-align: left;
+    margin-bottom: 40px;
 }
 
 .how-text h3 {
@@ -519,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .how-video {
     width: 100%;
-    max-width: 800px;
+    max-width: 400px;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
@@ -620,21 +621,49 @@ h1, h2, h3, h4, h5, h6 {
     /* How It Works - side by side layout for desktop */
     .how-it-works-content {
         flex-direction: row;
-        gap: 80px;
+        justify-content: center;
     }
 
     .how-text {
         flex: 0 0 400px;
+        margin-right: 60px;
+        margin-bottom: 0;
     }
 
     .how-video {
-        flex: 1;
+        flex: 0 1 650px;
     }
 
-    /* Why Choose OLA - larger icons on desktop */
+    /* Why Choose OLA - larger icons and two columns on desktop */
     .feature-icon {
         width: 80px;
         height: 80px;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 40px;
+        grid-auto-flow: column;
+    }
+
+    .feature-item:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .feature-item:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .feature-item:nth-child(3) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .feature-item:nth-child(4) {
+        grid-row: 2;
+        grid-column: 2;
     }
 }
 
