@@ -7,7 +7,8 @@
 
 :root {
     /* OLA Brand Colors - from your existing theme */
-    --primary-orange: hsl(32, 89%, 55%); /* Main brand color */
+    --primary-orange: hsl(32, 89%, 55%);
+    /* Main brand color */
     --primary-orange-light: hsl(28, 94%, 71%);
     --primary-orange-dark: hsl(30, 95%, 25%);
     --primary-orange-lightest: hsl(30, 100%, 96%);
@@ -26,7 +27,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -218,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background-image: url('images/hero-home-1.jpg');
+    background-image: url('images/Box-01.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -234,31 +240,72 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
-    max-width: 900px;
+    text-align: left;
+    max-width: 1200px;
     padding: 40px 20px;
+    width: 100%;
 }
 
 .hero-title {
-    font-size: 4rem;
-    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 15px;
     margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+
+.hero-title-the {
+    font-size: 1rem;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.hero-title-number {
+    display: flex;
+    align-items: flex-start;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.hero-title-one {
+    line-height: 1;
+}
+
+.hero-title-st {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 4px;
+    line-height: 1;
+}
+
+.hero-title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.1;
     letter-spacing: -1px;
+}
+
+.hero-title-line1,
+.hero-title-line2 {
+    display: block;
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
     line-height: 1.8;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -266,8 +313,24 @@ h1, h2, h3, h4, h5, h6 {
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    justify-content: center;
     flex-wrap: wrap;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.hero-wave svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 200px;
 }
 
 /* Buttons */
@@ -447,8 +510,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .feature-icon img {
-    width: 100%;
-    height: 100%;
+    width: 180%;
+    height: 180%;
     object-fit: contain;
     display: block;
 }
@@ -618,6 +681,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive Design */
 @media (min-width: 992px) {
+
     /* How It Works - side by side layout for desktop */
     .how-it-works-content {
         flex-direction: row;
@@ -668,6 +732,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
+
     /* Navigation for tablets */
     .nav-toggle {
         display: flex;
@@ -726,8 +791,16 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
     }
 
-    .hero-title {
-        font-size: 3rem;
+    .hero-title-number {
+        font-size: 6rem;
+    }
+
+    .hero-title-st {
+        font-size: 2rem;
+    }
+
+    .hero-title-text {
+        font-size: 2.5rem;
     }
 
     .section-header h2,
@@ -752,7 +825,30 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .hero-title-the {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+
+    .hero-title-number {
+        font-size: 4rem;
+        flex-shrink: 0;
+    }
+
+    .hero-title-st {
+        font-size: 1.4rem;
+    }
+
+    .hero-title-text {
+        font-size: 1.6rem;
+        flex-shrink: 1;
+        min-width: 0;
     }
 
     .hero-subtitle {
@@ -785,11 +881,45 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 425px) {
     .hero-title {
-        font-size: 2rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: nowrap;
+    }
+
+    .hero-title-the {
+        font-size: 0.75rem;
+        flex-shrink: 0;
+    }
+
+    .hero-title-number {
+        font-size: 2.5rem;
+        flex-shrink: 0;
+        gap: 2px;
+    }
+
+    .hero-title-st {
+        font-size: 0.75rem;
+        margin-left: 2px;
+    }
+
+    .hero-title-text {
+        font-size: 0.9rem;
+        line-height: 1.15;
+        flex-shrink: 1;
+        min-width: 0;
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .hero-wave {
+        height: 120px;
+    }
+
+    .hero-wave svg {
+        height: 120px;
     }
 
     .section-header h2,
@@ -807,6 +937,37 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+@media (max-width: 375px) {
+    .hero-title {
+        gap: 5px;
+    }
+
+    .hero-title-the {
+        font-size: 0.65rem;
+    }
+
+    .hero-title-number {
+        font-size: 2rem;
+    }
+
+    .hero-title-st {
+        font-size: 0.65rem;
+    }
+
+    .hero-title-text {
+        font-size: 0.75rem;
+        line-height: 1.1;
+    }
+
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .hero-content {
+        padding: 40px 15px;
+    }
+}
+
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
@@ -814,6 +975,7 @@ html {
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {

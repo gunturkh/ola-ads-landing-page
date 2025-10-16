@@ -9,10 +9,12 @@ const translations = {
             contact: "Contact"
         },
         hero: {
-            title: "OLA PERSONAL IMPORTER",
-            subtitle: "Help Import safely, easily and reliably. Ola provides shopping intermediary services from China and helps communicate with suppliers for the lowest prices.",
+            titleThe: "The",
+            titleLine1: "Personal Importer",
+            titleLine2: "For UMKM Indonesia",
+            subtitle: "Boost Your UMKM Revenue with Quality Import Products with Ola!",
             getStarted: "Get Started",
-            contact: "Contact Us on WhatsApp"
+            contact: "Contact Us"
         },
         services: {
             title1: "The Right Solution for",
@@ -85,10 +87,12 @@ const translations = {
             contact: "Kontak"
         },
         hero: {
-            title: "OLA PERSONAL IMPORTER",
-            subtitle: "Membantu Impor dengan aman, mudah, dan terpercaya. Ola menyediakan layanan perantara belanja dari China dan membantu berkomunikasi dengan supplier untuk harga termurah.",
+            titleThe: "The",
+            titleLine1: "Personal Importer",
+            titleLine2: "For UMKM Indonesia",
+            subtitle: "Tingkatkan Omset UMKM Anda dengan Produk Impor Berkualitas Bersama Ola!",
             getStarted: "Mulai Sekarang",
-            contact: "Hubungi Kami di WhatsApp"
+            contact: "Hubungi Kami"
         },
         services: {
             title1: "Solusi Tepat untuk",
