@@ -824,35 +824,51 @@ h6 {
         min-height: 500px;
     }
 
-    .hero-title {
-        flex-direction: row;
+    .hero-content {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 10px;
-        flex-wrap: nowrap;
     }
 
-    .hero-title-the {
-        font-size: 1.2rem;
-        flex-shrink: 0;
+    .hero-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        width: 100%;
     }
 
+    .hero-title-the,
     .hero-title-number {
-        font-size: 4rem;
-        flex-shrink: 0;
+        display: none;
     }
 
     .hero-title-st {
-        font-size: 1.4rem;
+        display: none;
     }
 
     .hero-title-text {
-        font-size: 1.6rem;
-        flex-shrink: 1;
-        min-width: 0;
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.3;
+    }
+
+    .hero-title-text::before {
+        content: 'The 1st ';
+        font-size: 1.5rem;
     }
 
     .hero-subtitle {
-        font-size: 1.125rem;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .hero-wave {
+        height: 120px;
+    }
+
+    .hero-wave svg {
+        height: 120px;
     }
 
     .section-header h2,
@@ -870,63 +886,13 @@ h6 {
     .hero-buttons,
     .cta-buttons {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        width: 100%;
     }
 
     .btn {
         width: 100%;
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 425px) {
-    .hero-title {
-        flex-direction: row;
-        align-items: center;
-        gap: 6px;
-        flex-wrap: nowrap;
-    }
-
-    .hero-title-the {
-        font-size: 0.75rem;
-        flex-shrink: 0;
-    }
-
-    .hero-title-number {
-        font-size: 2.5rem;
-        flex-shrink: 0;
-        gap: 2px;
-    }
-
-    .hero-title-st {
-        font-size: 0.75rem;
-        margin-left: 2px;
-    }
-
-    .hero-title-text {
-        font-size: 0.9rem;
-        line-height: 1.15;
-        flex-shrink: 1;
-        min-width: 0;
-    }
-
-    .hero-subtitle {
-        font-size: 0.875rem;
-    }
-
-    .hero-wave {
-        height: 120px;
-    }
-
-    .hero-wave svg {
-        height: 120px;
-    }
-
-    .section-header h2,
-    .section-title,
-    .cta-content h2,
-    .why-choose-content h2 {
-        font-size: 1.75rem;
+        text-align: center;
     }
 
     .services,
@@ -937,35 +903,12 @@ h6 {
     }
 }
 
+@media (max-width: 425px) {
+    /* All styles inherited from 768px breakpoint */
+}
+
 @media (max-width: 375px) {
-    .hero-title {
-        gap: 5px;
-    }
-
-    .hero-title-the {
-        font-size: 0.65rem;
-    }
-
-    .hero-title-number {
-        font-size: 2rem;
-    }
-
-    .hero-title-st {
-        font-size: 0.65rem;
-    }
-
-    .hero-title-text {
-        font-size: 0.75rem;
-        line-height: 1.1;
-    }
-
-    .hero-subtitle {
-        font-size: 0.8rem;
-    }
-
-    .hero-content {
-        padding: 40px 15px;
-    }
+    /* All styles inherited from 425px breakpoint */
 }
 
 /* Smooth Scrolling */
