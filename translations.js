@@ -195,11 +195,11 @@ function updateLanguage(lang) {
     const ctaWhatsapp = document.getElementById('ctaWhatsapp');
 
     if (heroWhatsapp) {
-        heroWhatsapp.href = `https://wa.me/6285158990051?text=${encodedMessage}`;
+        heroWhatsapp.href = `https://wa.me/628117708499?text=${encodedMessage}`;
     }
 
     if (ctaWhatsapp) {
-        ctaWhatsapp.href = `https://wa.me/6285158990051?text=${encodedMessage}`;
+        ctaWhatsapp.href = `https://wa.me/628117708499?text=${encodedMessage}`;
     }
 
     // Update language toggle active state
