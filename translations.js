@@ -12,7 +12,8 @@ const translations = {
             titleThe: "The",
             titleLine1: "Personal Importer",
             titleLine2: "For UMKM Indonesia",
-            subtitle: "Boost Your UMKM Revenue with Quality Import Products with Ola!",
+            subtitleLine1: "Boost Your UMKM Revenue with",
+            subtitleLine2: "Quality Import Products with Ola!",
             getStarted: "Get Started",
             contact: "Contact Us"
         },
@@ -116,7 +117,8 @@ const translations = {
             titleThe: "The",
             titleLine1: "Personal Importer",
             titleLine2: "For UMKM Indonesia",
-            subtitle: "Tingkatkan Omset UMKM Anda dengan Produk Impor Berkualitas Bersama Ola!",
+            subtitleLine1: "Tingkatkan Omset UMKM Anda dengan",
+            subtitleLine2: "Produk Impor Berkualitas Bersama Ola!",
             getStarted: "Mulai Sekarang",
             contact: "Hubungi Kami"
         },
