@@ -218,8 +218,8 @@ function updateLanguage(lang) {
 
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', () => {
-    // Get saved language or default to English
-    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    // Get saved language or default to Bahasa Indonesia
+    const savedLang = localStorage.getItem('preferredLanguage') || 'id';
     updateLanguage(savedLang);
 
     // Language toggle button
