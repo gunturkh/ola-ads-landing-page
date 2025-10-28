@@ -340,6 +340,7 @@ h6 {
     height: 200px;
     overflow: hidden;
     line-height: 0;
+    display: none;
 }
 
 .hero-wave svg {
