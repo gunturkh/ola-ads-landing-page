@@ -970,6 +970,9 @@ h6 {
         align-items: flex-start;
         gap: 0;
         width: 100%;
+        line-height: 1.1 !important;
+        letter-spacing: -1.5px !important;
+        margin-bottom: 1rem !important;
     }
 
     .hero-title-the,
